@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">InerziA</string>
+    
+    <string-array name="opciones">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+    </string-array>
+
+    <string-array name="motivaciones">
+        <item>Ser capaz de tener una conversación sencilla</item>
+        <item>Leer noticias en inglés</item>
+        <item>Conocer personas y culturas</item>
+        <item>ver un pelicula en inglés</item>
+        <item>Crecer en mi carrera</item>
+    </string-array>
 </resources>
