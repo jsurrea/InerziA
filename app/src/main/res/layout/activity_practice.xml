@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    tools:context=".practice">
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="207dp"
         android:layout_height="121dp"
-        app:srcCompat="@mipmap/logo_completo"
+        app:srcCompat="@mipmap/Logodefinitivo"
         tools:layout_editor_absoluteX="106dp"
         tools:layout_editor_absoluteY="48dp" />
 
@@ -61,7 +61,7 @@
         android:id="@+id/imageButton9"
         android:layout_width="86dp"
         android:layout_height="61dp"
-        app:srcCompat="@drawable/Home_icone_foreground"
+        app:srcCompat="@drawable/Icone_foreground"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="575dp" />
 
