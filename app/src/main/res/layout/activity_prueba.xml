@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PruebaActivity">
+
+    <Button
+        android:id="@+id/btnRegresarTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="94dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:text="Regresar"
+        android:textColor="#35595F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnIniciartest"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciartest"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnIniciartest"
+        android:layout_width="168dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/btniniciartest"
+        android:fontFamily="sans-serif-black"
+        android:text="INICIAR TEST"
+        android:textAlignment="center"
+        android:textColor="#35595F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegresarTest"
+        app:layout_constraintStart_toStartOf="@+id/txtInfotest"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfotest"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Test 1"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtUnidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtUnidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Unidad 1: Saludos"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTest"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Pon a prueba tus conocimientos"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtInfotest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUnidad"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtInfotest"
+        android:layout_width="370dp"
+        android:layout_height="126dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="* El examen contiene 30 preguntas \n* Tienes 30 minutos para completarlo \n* Necesitas 90% para aprobar"
+        android:textAlignment="viewStart"
+        android:textColor="#191818"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciartest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensaje"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="153dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/Logodefinitivo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
