@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeccionActivity">
+
+    <Button
+        android:id="@+id/btnOpcion1"
+        android:layout_width="91dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/btnopciones"
+        android:fontFamily="sans-serif-black"
+        android:text="Opcion 1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpcion3"
+        app:layout_constraintEnd_toStartOf="@+id/btnOpcion2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFrase" />
+
+    <Button
+        android:id="@+id/btnOpcion2"
+        android:layout_width="91dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/btnopciones"
+        android:fontFamily="sans-serif-black"
+        android:text="Opcion 2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpcion4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnOpcion1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btnOpcion3"
+        android:layout_width="91dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/btnopciones"
+        android:fontFamily="sans-serif-black"
+        android:text="Opcion 3"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnPerfil"
+        app:layout_constraintEnd_toStartOf="@+id/btnOpcion4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpcion1" />
+
+    <Button
+        android:id="@+id/btnOpcion4"
+        android:layout_width="91dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/btnopciones"
+        android:fontFamily="sans-serif-black"
+        android:text="Opcion 4"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnPrueba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnOpcion3"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpcion2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="408dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="119dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpcion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPalabra"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtPalabra"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="9dp"
+        android:text="Teacher"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/txtFrase"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="The teacher went to the zoo yesterday."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpcion1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/ic_paginaprincipal_foreground"
+        android:backgroundTint="#35595F"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPerfil"
+        app:layout_constraintEnd_toStartOf="@+id/btnPrueba"
+        app:layout_constraintStart_toEndOf="@+id/btnPerfil"
+        app:layout_constraintTop_toTopOf="@+id/btnPerfil"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnPrueba"
+        android:layout_width="109dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_practica_foreground"
+        android:backgroundTint="#35595F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpcion4" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPalabra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/Logodefinitivo" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="183dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/btnVolver"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_perfil_foreground"
+        android:backgroundTint="#35595F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpcion3" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="92dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/ic_volver_foreground"
+        android:backgroundTint="#35595F"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+</androidx.constraintlayout.widget.ConstraintLayout>
