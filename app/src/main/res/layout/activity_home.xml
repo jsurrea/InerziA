@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -23,17 +22,17 @@
         android:id="@+id/imageButton7"
         android:layout_width="82dp"
         android:layout_height="59dp"
-        app:srcCompat="@drawable/Practice_foreground_foreground"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="562dp" />
+        app:srcCompat="@drawable/Practice_foreground"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="573dp" />
 
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="89dp"
         android:layout_height="62dp"
         app:srcCompat="@drawable/Profile_foreground"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="562dp" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="570dp" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
@@ -44,18 +43,18 @@
         android:id="@+id/imageButton9"
         android:layout_width="83dp"
         android:layout_height="61dp"
-        app:srcCompat="@drawable/Icone_foreground"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="562dp" />
+        app:srcCompat="@drawable/Home_icone_foreground"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="571dp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="INERZIA"
+        android:textColor="#35595F"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="#35595F"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="49dp" />
 
@@ -133,7 +132,7 @@
             android:layout_margin="6dp"
             android:max="100"
             android:progress="60"
-            android:progressTint="#63C29C"/>
+            android:progressTint="#63C29C" />
     </LinearLayout>
 
     <LinearLayout
@@ -168,24 +167,14 @@
             android:layout_margin="6dp"
             android:max="100"
             android:progress="15"
-            android:progressTint="#63C29C"/>
+            android:progressTint="#63C29C" />
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/Icone"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="27dp" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="142dp"
-        android:layout_height="131dp"
-        android:src="@mipmap/cb_logo"
-        tools:layout_editor_absoluteX="242dp"
-        tools:layout_editor_absoluteY="10dp" />
-
-
+        android:id="@+id/imageView"
+        android:layout_width="135dp"
+        android:layout_height="87dp"
+        app:srcCompat="@mipmap/Logo"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
