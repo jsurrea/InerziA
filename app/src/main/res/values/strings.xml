@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">InerziA</string>
+    <string name="Bienvenida">Bienvenido, Juan Manuel</string>
+    <string name="viajesU1">Viajes</string>
+    <string name="unidad3">Unidad 3</string>
+    <string name="pronombresU2">Pronombres</string>
+    <string name="unidad2">Unidad 2</string>
+    <string name="homeI">Home</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="practice1">practice</string>
+    <string name="saludos1">Saludos</string>
+    <string name="unidad1">Unidad 1</string>
+    <string name="inerziA">INERZIA</string>
 
     <string-array name="opciones">
         <item>5 min</item>
