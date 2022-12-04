@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Test">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="134dp"
+        android:layout_height="120dp"
+        app:srcCompat="@mipmap/Logodefinitivo"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="85dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/Profile_foreground"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/Icone_foreground"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="91dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/Practice_foreground"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="315dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Es momento de que evaluemos tus conocimientos"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="319dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="Excelente Juan Manuel!!"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="229dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="126dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FFD765 "
+        android:gravity="center"
+        android:text="Iniciar TEST"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
