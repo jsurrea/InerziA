@@ -1,4 +1,4 @@
-package com.inerzia.inerzia;
+package com.example.inerzia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
