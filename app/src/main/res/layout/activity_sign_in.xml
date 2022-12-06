@@ -3,69 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
 
     <ImageView
         android:id="@+id/ivLogo"
         android:layout_width="299dp"
         android:layout_height="118dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="136dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/etCorreo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logomain" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="327dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
-        app:layout_constraintWidth_percent="0.80">
-
-        <EditText
-            android:id="@+id/etCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/email"
-            android:drawablePadding="8dp"
-            android:ems="10"
-            android:hint="Correo Electrónico"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/etContrsaeña"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/lock"
-            android:drawablePadding="8dp"
-            android:ems="10"
-            android:hint="Contraseña"
-            android:inputType="textPassword" />
-
-    </LinearLayout>
 
     <Button
         android:id="@+id/btnIniciarSesion"
         android:layout_width="248dp"
         android:layout_height="0dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/btn_form"
         android:drawableLeft="@drawable/play"
+        android:onClick="InicioSesion"
         android:text="Iniciar Sesion"
         android:textColor="#35595F"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:onClick="InicioSesion"
         app:layout_constraintBottom_toTopOf="@+id/btnRegresar"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -74,13 +37,41 @@
         android:layout_width="249dp"
         android:layout_height="55dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="back"
         android:text="Regresar"
         android:textColor="#35595F"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:onClick="back"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="373dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/etContrsaeña"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etContrsaeña"
+        android:layout_width="376dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="92dp"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnIniciarSesion"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

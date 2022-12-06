@@ -5,29 +5,59 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class LandingActivity extends AppCompatActivity {
 
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_landing);
+//    }
+
+//    public void navegar(View view){
+//
+//        Intent miIntent=null;
+//
+//        switch (view.getId()){
+//            case R.id.btnIniciarSesion:
+//                miIntent=new Intent(LandingActivity.this, SignInActivity.class);
+//                break;
+//
+//            case R.id.btnCrearCuenta:
+//                miIntent=new Intent(LandingActivity.this, SignUpActivity.class);
+//                break;
+//        }
+//        startActivity(miIntent);
+//    }
+
+    //public class LandingActivity extends AppCompatActivity {
+
+    Button btnSigni;
+    Button btnSignu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
+        btnSigni = findViewById(R.id.btnIniciarSesion);
+        btnSignu = findViewById(R.id.btnCrearCuenta);
+
+        btnSigni.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LandingActivity.this,SignInActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSignu.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LandingActivity.this,SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
-    public void navegar(View view){
-
-        Intent miIntent=null;
-
-        switch (view.getId()){
-            case R.id.btnIniciarSesion:
-                miIntent=new Intent(LandingActivity.this, SignInActivity.class);
-                break;
-
-            case R.id.btnCrearCuenta:
-                miIntent=new Intent(LandingActivity.this, SignUpActivity.class);
-                break;
-        }
-        startActivity(miIntent);
-    }
 
 }
