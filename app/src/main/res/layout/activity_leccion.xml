@@ -116,16 +116,17 @@
 
     <Button
         android:id="@+id/btnHome"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="95dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="25dp"
         android:background="@drawable/ic_paginaprincipal_foreground"
         android:backgroundTint="#35595F"
+        android:onClick="home"
         app:layout_constraintBottom_toBottomOf="@+id/btnPerfil"
         app:layout_constraintEnd_toStartOf="@+id/btnPrueba"
         app:layout_constraintStart_toEndOf="@+id/btnPerfil"
         app:layout_constraintTop_toTopOf="@+id/btnPerfil"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.083" />
 
     <Button
         android:id="@+id/btnPrueba"
@@ -169,13 +170,14 @@
 
     <Button
         android:id="@+id/btnPerfil"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="90dp"
+        android:layout_height="72dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="4dp"
         android:background="@drawable/ic_perfil_foreground"
         android:backgroundTint="#35595F"
+        android:onClick="perfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnHome"
         app:layout_constraintStart_toStartOf="parent"
@@ -195,4 +197,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.093" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
