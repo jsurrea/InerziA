@@ -2,7 +2,9 @@ package com.example.inerzia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -10,5 +12,18 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+    }
+    public void IraPerfil(View view){
+        Intent comeback = new Intent(HomeActivity.this, ProfileActivity.class);
+        startActivity(comeback);
+    }
+
+    public void iraHome(View view){
+        Intent comeback = new Intent(HomeActivity.this, HomeActivity.class);
+        startActivity(comeback);
+    }
+    public void iraPracticar(View view){
+        Intent comeback = new Intent(HomeActivity.this, Practice1Activity.class);
+        startActivity(comeback);
     }
 }
