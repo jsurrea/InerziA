@@ -18,12 +18,12 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(comeback);
     }
 
-    public void iraHome(View view){
-        Intent comeback = new Intent(HomeActivity.this, HomeActivity.class);
-        startActivity(comeback);
-    }
     public void iraPracticar(View view){
         Intent comeback = new Intent(HomeActivity.this, Practice1Activity.class);
+        startActivity(comeback);
+    }
+    public void iraTest(View view){
+        Intent comeback = new Intent(HomeActivity.this,Activity_Test.class);
         startActivity(comeback);
     }
 }

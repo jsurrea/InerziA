@@ -19,7 +19,7 @@ public class Practice1Activity extends AppCompatActivity {
         btnU1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Practice1Activity.this,LeccionActivity.class);
+                Intent intent = new Intent(Practice1Activity.this,LessonActivity.class);
                 startActivity(intent);
             }
         });

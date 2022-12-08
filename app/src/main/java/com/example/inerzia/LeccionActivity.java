@@ -24,7 +24,6 @@ public class LeccionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_leccion);
         btnP = findViewById(R.id.btnPerfil);
         btnH = findViewById(R.id.btnHome);
-        btnL = findViewById(R.id.btnPrueba);
         btnV = findViewById(R.id.btnVolver);
 
         btnV.setOnClickListener(new View.OnClickListener(){
@@ -48,13 +47,7 @@ public class LeccionActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnL.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LeccionActivity.this,PruebaActivity.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
     public void home(View view){

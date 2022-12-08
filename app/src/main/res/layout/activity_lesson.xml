@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LessonActivity">
+
+    <Button
+        android:id="@+id/btnAprendiendo"
+        android:layout_width="246dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_form"
+        android:text="continuar aprendiendo"
+        android:textColor="#35595F"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLimpiar" />
+
+    <TextView
+        android:id="@+id/txtPhrase"
+        android:layout_width="320dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="40dp"
+        android:text="I would like some coffee."
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAprendiendo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtWord"
+        android:layout_width="325dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="36dp"
+        android:text="Coffee."
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnAudioFrase"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnAudioPalabra"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_green"
+        android:text="audio palabra"
+        android:textColor="#E5E4E2"
+        app:layout_constraintBottom_toTopOf="@+id/txtWord"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnAudioFrase"
+        android:layout_width="155dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_green"
+        android:text="audio frase"
+        android:textColor="#E5E4E2"
+        app:layout_constraintBottom_toTopOf="@+id/txtPhrase"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageActivity"
+        android:layout_width="238dp"
+        android:layout_height="226dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAudioPalabra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/some_coffee" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="40dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_form"
+        android:drawableRight="@drawable/ic_limpiar"
+        android:text=" "
+        android:onClick="limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnRetroceder"
+        android:layout_width="38dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_form"
+        android:drawableLeft="@drawable/ic_arrow_atras"
+        android:text=" "
+        android:onClick="volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAprendiendo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

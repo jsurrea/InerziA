@@ -161,6 +161,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:text="perfil"
+        android:background="@drawable/btn_form"
         android:onClick="aPerfil"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/btnHome3"
@@ -174,6 +175,7 @@
         android:layout_marginBottom="16dp"
         android:text="Home"
         android:onClick="aHome"
+        android:background="@drawable/btn_form"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/btnPracticar2"
         app:layout_constraintStart_toEndOf="@+id/btnprofile2" />
@@ -186,6 +188,7 @@
         android:layout_marginBottom="16dp"
         android:text="practicar"
         android:onClick="aPracticar"
+        android:background="@drawable/btn_form"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnHome3" />
