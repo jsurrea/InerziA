@@ -35,7 +35,7 @@
             android:inputType="textPersonName"
             android:drawableLeft="@drawable/person"
             android:drawablePadding="8dp"
-            android:hint="Apodo"/>
+            android:hint="Usuario"/>
 
         <EditText
             android:id="@+id/etCorreo"
