@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "534229915028",
+    "firebase_url": "https://inerzia-fc617-default-rtdb.firebaseio.com",
+    "project_id": "inerzia-fc617",
+    "storage_bucket": "inerzia-fc617.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534229915028:android:260e3c8e26fad7f2adab81",
+        "android_client_info": {
+          "package_name": "com.example.inerzia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534229915028-bstldc51a7kmaja49k4s5u0d5rohrmrn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.inerzia",
+            "certificate_hash": "f4ba46ff22b59a79e1d65bc5b465a8e6d88efa46"
+          }
+        },
+        {
+          "client_id": "534229915028-fst4gi186e7mk7fn4tehucq4oil0vaj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLZKdO9gs7DA4O54DjJTkzDjJlaZEgVk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534229915028-fst4gi186e7mk7fn4tehucq4oil0vaj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
